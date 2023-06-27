@@ -1,4 +1,4 @@
-# OpenAI API Invoker Sample App
+# PaLM2 POC App with LangChain
 
 ## Setup
 
@@ -8,7 +8,7 @@
 3. Navigate into the project directory:
 
    ```bash
-   $ cd langchain-gpt-invoker
+   $ cd palm2-poc-python
    ```
 
 4. Create a new virtual environment:
@@ -24,57 +24,15 @@
    $ pip install -r requirements.txt
    ```
 
-6. Make a copy of the example environment variables file:
+6. Run the Contact Center Automation App:
 
    ```bash
-   $ cp .env.example .env
+   $ cd contact-centre
+   $ streamlit run palm2-contact-centre-automation.py
    ```
-
-7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file.
-
-8. Run the DB chat agent app:
+7. Run the Trader Dashboard App:
 
    ```bash
-   $ cd banking-db-chat-agent
-   $ streamlit run langchain-banking-agent.py
+   $ cd trader-dashboard
+   $ streamlit run palm2-trader-dashboard.py
    ```
-9. Run the banking-document-chat-agent app:
-
-   ```bash
-   $ cd banking-document-chat-agent
-   $ streamlit run sec-file-chat-agent.py
-   ```
-10. Run the banking-document-chat-plain app: This uses a Pinecone client to search the documents
-
-   ```bash
-   $ cd banking-document-chat-agent
-   $ streamlit run sec-file-chat-plain.py
-   ```
-   
-11. If you find issues with SSL, pls do the following
-    ```bash
-    $ pip uninstall urllib3
-    $ pip install 'urllib3<2.0'
-    ```
-12. If you want to run the WIKI search agent then do the following
-    ```bash
-    $ cd wiki-reader-agent
-    $ streamlit run wiki-reader-agent.py
-    ```
-13. If you want to run the SEC file pls use this
-    ```bash
-    $ cd wiki-reader-agent
-    $ streamlit run pinecone-agent.py
-14. If you want to run the help desk application, then the following
-    ```bash
-    $ cd helpdesk-agent
-    $ streamlit run helpdesk-automator-langchain.py
-15. If you want to run the investment advisor applications which is a LangChain agent, then the following
-    ```bash
-    $ cd investment-advisor-bot
-    $ streamlit run langchain-secfile-chatbot.py
-16. If you want to run the investment advisor bot which is a LangChain recursive agent (like BabyAGI), then the following
-    ```bash
-    $ cd investment-advisor-bot
-    $ streamlit run langchain-advisor-bot.py
-    ```

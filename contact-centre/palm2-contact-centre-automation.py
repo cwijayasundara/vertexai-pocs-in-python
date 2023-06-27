@@ -97,7 +97,7 @@ def display_row(customer_enquery):
 st.set_page_config(page_title="Contact Centre Automation for ABC Plc", layout="wide",
                    initial_sidebar_state="collapsed", page_icon="robo.png")
 
-icon = Image.open("robo.png")
+icon = Image.open("../trader-dashboard/robo.png")
 st.image(icon, width=100)
 
 st.title("Contact Centre Automation for ABC Plc")
