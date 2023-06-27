@@ -1,0 +1,10 @@
+google-cloud-aiplatform
+vertexai
+langchain
+chromadb
+pandas
+streamlit
+pypdf
+transformers
+pandas
+datasets
